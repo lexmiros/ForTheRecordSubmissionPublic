@@ -58,9 +58,9 @@ function App() {
       {currentPage === "GetFibbonaciLength" && (
         <UserInputForm
           setUserInput={setFibonacciLength}
-          inputPrompt="Please enter the length of the fibonacci sequence to check against (Integer between 0 - 1000 inclusive)"
-          submitButtonText="Set fibonacci sequence length"
-          inputNameTag="fibonacci sequence"
+          inputPrompt="Please enter the length of the Fibonacci sequence to check against (Integer between 0 - 1000 inclusive)"
+          submitButtonText="Set Fibonacci sequence length"
+          inputNameTag="Fibonacci sequence"
           setCurrentPage={setCurrentPage}
           nextPage="GetDelay"
           maxInput={1000}

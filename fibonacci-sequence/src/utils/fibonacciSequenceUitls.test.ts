@@ -27,7 +27,7 @@ describe('calculateFibonacciSequence', () => {
     expect(result).toEqual([0n, 1n, 1n, 2n, 3n, 5n, 8n, 13n, 21n]);
   });
 
-  it('should return the 1000th digit of the fibonacci sequence given the length limit is 1000', () => {
+  it('should return the 1000th digit of the Fibonacci sequence given the length limit is 1000', () => {
     const result = calculateFibonacciSequence(1000);
     expect(result[result.length - 1]).toEqual(thousandthDigitOfFibonacciSequence);
   });

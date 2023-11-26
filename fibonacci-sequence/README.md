@@ -3,6 +3,7 @@
 ## Aleksei Miros Submission : https://fibonacci-sequence.fly.dev/
 
 ## To run locally:
+- Assumes Node is installed
 - From root of project, cd to fibonacci-sequence
 - run : npm install
 - run: npm run dev

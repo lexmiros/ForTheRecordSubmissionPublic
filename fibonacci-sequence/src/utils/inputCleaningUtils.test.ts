@@ -1,4 +1,4 @@
-import { allowOnlyNumeric, allowNumericAndHyphen, formatNumberToScientificNotation } from './inputCleaningUtils';
+import { allowOnlyNumeric, allowNumericAndHyphen, formatNumberToScientificNotation, formatInputToMaxChars } from './inputCleaningUtils';
 
 describe('allowOnlyNumeric', () => {
   it('should remove non-numeric characters from the input string', () => {
@@ -70,5 +70,28 @@ describe('formatNumberToScientificNotation', () => {
     expect(result).toEqual('-1.23456789e+19');
   });
 
+
+});
+describe('formatInputToMaxChars', () => {
+  it('should not format a string the same length as the maxLength', () => {
+    const maxLength = 6
+    const result = formatInputToMaxChars("abc123", maxLength)
+    expect(result).toHaveLength(maxLength);
+  });
+  it('should not format a string when string length is less than maxLength', () => {
+    const maxLength = 12
+    const result = formatInputToMaxChars("abc123", maxLength)
+    expect(result).toHaveLength(6);
+  });
+  it('should format a string the length given', () => {
+    const maxLength = 4
+    const result = formatInputToMaxChars("abc123", maxLength)
+    expect(result).toHaveLength(maxLength);
+  });
+  it('should format a string the length given when length is zero', () => {
+    const maxLength = 0
+    const result = formatInputToMaxChars("abc123", maxLength)
+    expect(result).toHaveLength(maxLength);
+  });
 
 });

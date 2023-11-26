@@ -3,18 +3,17 @@
 ## Aleksei Miros Submission : https://fibonacci-sequence.fly.dev/
 
 ## To run locally:
-- Assumes Node is installed
-- From root of project, cd to fibonacci-sequence
-- run : npm install
-- run: npm run dev
+- Assumes Node is installed.
+- From root of project, cd to fibonacci-sequence.
+- run : npm install.
+- run: npm run dev.
 - App should be running on : http://localhost:5173/
 
 ## To run unit tests:
-- From root of project, cd to fibonacci-sequence
-- run : npm test
+- From root of project, cd to fibonacci-sequence.
+- run : npm test.
 
 ## Project Usage
-
 
 ### Input Feedback
 
@@ -41,9 +40,16 @@ Enter how often the frequency count updates in seconds:
 - Frequencies are permanently displayed, but are updated at the given interval.
 - Does not accept empty input.
 
+### Changing variables
+
+You can change the Fibonacci sequence length and timer delay after they have been set:
+
+- Changing these variables does not reset the frequency count.
+- Numbers marked as in the Fibonacci sequence retain their mark with resepect to the sequence at time of entering.
+
 ### Timer
 
-The timer starts automatically when loading onto the main 'page.'
+The timer starts automatically when loading onto the main 'page'.
 
 **Controls:**
 

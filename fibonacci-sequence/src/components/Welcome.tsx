@@ -45,6 +45,15 @@ const Welcome = ({ setCurrentPage }: WelcomeProps) => {
       </div>
 
       <div style={{ marginTop: "20px" }}>
+        <h3>Changing Variables</h3>
+        <p>You can change the Fibonacci sequence length and timer delay after they have been set:</p>
+        <ul>
+          <li>Changing these variables does not reset the frequency count.</li>
+          <li>Numbers marked as in the Fibonacci sequence retain their mark with resepect to the sequence at time of entering.</li>
+        </ul>
+      </div>
+
+      <div style={{ marginTop: "20px" }}>
         <h3>Timer</h3>
         <p>The timer starts automatically when loading onto the main 'page'.</p>
         <p>

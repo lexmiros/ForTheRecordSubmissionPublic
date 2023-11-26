@@ -19,7 +19,7 @@ const Navbar = ({ setCurrentPage }: NavbarProps) => {
         className={`navbar-button-container ${isDropdownOpen ? "open" : ""}`}
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       >
-        <button className="navbar-button">Naviagte Page</button>
+        <button className="navbar-button">Navigate Pages</button>
         <div className={`dropdown ${isDropdownOpen ? "visible" : ""}`}>
           <button onClick={() => handleItemClick("Welcome")}>
             Welcome page
